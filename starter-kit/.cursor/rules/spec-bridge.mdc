@@ -1,0 +1,11 @@
+---
+description: Enforce Spec Bridge Locked Specifications from Jira before coding
+globs: ["**/*"]
+alwaysApply: true
+---
+
+When the user references a Jira work item key (matching `[A-Z][A-Z0-9]+-[0-9]+`):
+1. Retrieve `get-locked-spec(issueKey, format="speckit")` via your Atlassian Rovo / Spec Bridge MCP connection before proposing code changes.
+2. Refuse to implement `DRIFTED` or `DRAFT` specs until open Decision Cards are locked in Jira.
+3. Treat `Explicit Non-Goals` and `[Parked]` items as strict negative constraints—never build or scaffold them.
+4. Cover every Gherkin scenario and Verification Checklist item with tests, and invoke `flag-implementation-gap` if brownfield code contradicts the spec.

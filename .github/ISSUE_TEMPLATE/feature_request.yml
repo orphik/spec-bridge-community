@@ -1,0 +1,40 @@
+name: 💡 Feature / Enhancement Request
+description: Suggest a new capability, IDE integration, or workflow improvement for Spec Bridge
+title: "[Enhancement]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: persona
+    attributes:
+      label: Primary Role
+      options:
+        - Product Manager / Product Owner
+        - Software Engineer / Tech Lead
+        - Engineering Manager / Architect
+        - Jira / Atlassian Administrator
+    validations:
+      required: true
+  - type: checkboxes
+    id: agents
+    attributes:
+      label: AI Coding Agents / Tools Used by Your Team
+      options:
+        - label: Cursor
+        - label: Claude Code
+        - label: GitHub Copilot
+        - label: Atlassian Rovo
+        - label: Google Antigravity / Other MCP Client
+  - type: textarea
+    id: problem
+    attributes:
+      label: What workflow friction or problem would this solve?
+      placeholder: E.g., "Our team uses custom Jira work item types for Architectural Spikes and wants..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Ideal behavior in Spec Bridge
+      placeholder: Describe what success looks like for your PMs and Engineers...
+    validations:
+      required: true

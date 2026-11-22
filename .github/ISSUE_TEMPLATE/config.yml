@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Roadmap & Discussions
+    url: https://github.com/orphik/spec-bridge-community/discussions
+    about: Vote on upcoming features, ask workflow questions, and share SDD tips
+  - name: 🛟 Private Priority Support Portal (24h SLA)
+    url: https://orphik.atlassian.net/servicedesk
+    about: Confidential 1-on-1 support for Jira Admins and Enterprise teams

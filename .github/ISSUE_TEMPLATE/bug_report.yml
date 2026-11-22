@@ -1,0 +1,31 @@
+name: 🐞 Bug Report
+description: Report an unexpected behavior in Spec Bridge (never include confidential PRD content)
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > **Need private Enterprise Support?** Open a private ticket on our [**Priority Support Desk (24h SLA)**](https://orphik.atlassian.net/servicedesk) instead of posting publicly.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened vs. what you expected?
+      placeholder: Clear description of the issue...
+    validations:
+      required: true
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Jira Space / Project Type
+      options:
+        - Team-managed space
+        - Company-managed space (Standard Epic -> Story -> Subtask)
+        - Company-managed Enterprise (Portfolio Epic / Capability / Feature)
+        - Unsure
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Zero-PII Diagnostic Snapshot (from in-app Support & Feedback drawer)
+      description: In Jira, click "💬 Support & Feature Feedback" -> "📋 Copy Diagnostic Snapshot (Zero PII)" and paste below.
+      render: json
