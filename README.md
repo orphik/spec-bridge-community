@@ -62,7 +62,9 @@ See [`SECURITY.md`](./SECURITY.md) for enterprise security review details.
 
 ---
 
-## Feedback, Feature Roadmap & 24h SLA Support
+## Community-Driven Roadmap, Fast-Track CI/CD & 24h SLA Support
 
-- **Request Enhancements & Vote on Roadmap:** Open a thread in [**GitHub Discussions**](https://github.com/orphik/spec-bridge-community/discussions) or submit a [**Feature Request**](https://github.com/orphik/spec-bridge-community/issues/new/choose).
-- **Private Enterprise Support (24h SLA):** Need private assistance or enterprise onboarding? Visit our [**Support Portal (`SUPPORT.md`)**](./SUPPORT.md) and include the **Zero-PII Diagnostic Snapshot** from Spec Bridge's in-app `💬 Support & Feature Feedback` drawer.
+Spec Bridge is actively shaped by feedback from **Jira Administrators, Product Managers, Agile Coaches, Tech Leads, and AI-Assisted Engineering Teams**. Every release runs through an automated zero-egress security, type-safety, and test verification CI/CD pipeline so high-impact community improvements ship in days rather than quarters.
+
+- **Shape the Roadmap & Share Feedback:** Open a thread in [**GitHub Discussions**](https://github.com/orphik/spec-bridge-community/discussions) or submit a [**Feature Request**](https://github.com/orphik/spec-bridge-community/issues/new/choose)—tell us what hierarchy setups, custom fields, workflow gates, or agent exports would make Spec Bridge sharper for your team.
+- **Private Enterprise Support (24h SLA):** Need private assistance or enterprise onboarding? Visit our [**Support Portal (`SUPPORT.md`)**](./SUPPORT.md) and include the **Zero-PII Diagnostic Snapshot** from Spec Bridge's in-app `Support & Feature Feedback` drawer.
