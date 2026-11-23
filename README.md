@@ -45,6 +45,12 @@ Implement Jira issue PROJ-42 strictly following its locked specification. Call g
 
 ---
 
+## Pre-Code Stress Tests: Six Messy Specs vs. Literal Coding Agents
+
+Want to see how your current refinement workflow or AI coding setup handles realistic enterprise ambiguity? Try feeding the six synthetic specs in [`./stress-tests`](./stress-tests) (contradictory three-author PRDs, pasted `#eng-product` Slack threads, Friday `?bypass_sso=true` escalations, and two-sentence destructive tickets) into your pipeline—and compare against our open-source local repository scanner, [**monkey-paw**](https://github.com/orphik/monkey-paw).
+
+---
+
 ## Security & Privacy (`Runs on Atlassian`)
 
 - **Zero External Network Egress:** Your Confluence PRDs, Jira issues, and Specifications **never** leave Atlassian Cloud.
