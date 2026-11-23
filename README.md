@@ -5,7 +5,7 @@
 # Spec Bridge — Community Hub & AI Agent Starter Kit
 
 [![Runs on Atlassian](https://img.shields.io/badge/Runs%20on%20Atlassian-100%25%20Zero%20Egress-0052CC?logo=atlassian)](https://go.atlassian.com/runs-on-atlassian)
-[![Jira Cloud](https://img.shields.io/badge/Jira%20Cloud-Free%20up%20to%2010%20Users-1F845A?logo=jira)](https://marketplace.atlassian.com/search?query=Spec%20Bridge)
+[![Jira Cloud](https://img.shields.io/badge/Jira%20Cloud-30--Day%20Free%20Trial-1F845A?logo=jira)](https://marketplace.atlassian.com/apps/562168567?tab=overview)
 [![MCP Ready](https://img.shields.io/badge/MCP-Cursor%20%7C%20Claude%20Code%20%7C%20Copilot%20%7C%20Rovo-6E5DC6)](#quick-start-connect-your-ide-coding-agent)
 
 **Spec Bridge** is the Spec-Driven Development (SDD) pre-flight gatekeeper for **Jira Cloud** and **Confluence**. It catches unstated edge cases, contradictions, permission holes, and scope creep *before* AI coding agents write a single line of code.
