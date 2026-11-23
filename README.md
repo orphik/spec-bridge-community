@@ -1,3 +1,7 @@
+<p align="left">
+  <img src="./assets/brand-logo.png" alt="Spec Bridge" height="58" />
+</p>
+
 # Spec Bridge — Community Hub & AI Agent Starter Kit
 
 [![Runs on Atlassian](https://img.shields.io/badge/Runs%20on%20Atlassian-100%25%20Zero%20Egress-0052CC?logo=atlassian)](https://go.atlassian.com/runs-on-atlassian)
