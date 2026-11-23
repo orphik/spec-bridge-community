@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        > **Need private Enterprise Support?** Open a private ticket on our [**Priority Support Desk (24h SLA)**](https://orphik.atlassian.net/helpcenter/SUP/) instead of posting publicly.
+        > **Need private Enterprise Support?** Open a private ticket on our [**Priority Support Desk (24h SLA)**](https://orphik.atlassian.net/helpcenter/SUP/contact-us) instead of posting publicly.
   - type: textarea
     id: summary
     attributes:

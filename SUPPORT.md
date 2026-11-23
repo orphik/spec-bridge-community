@@ -7,7 +7,7 @@
 ## Support Channels
 
 1. **Private Enterprise Support Desk (24h SLA):**
-   - **Customer Portal:** https://orphik.atlassian.net/helpcenter/SUP/ *(or use the **Priority Support Portal** button inside Spec Bridge's in-app `💬 Support & Feature Feedback` drawer)*
+   - **Customer Portal:** https://orphik.atlassian.net/helpcenter/SUP/contact-us *(or use the **Priority Support Portal** button inside Spec Bridge's in-app `💬 Support & Feature Feedback` drawer)*
    - Best for private troubleshooting, workflow/hierarchy setup, billing questions, or enterprise security inquiries.
 2. **Community Feature Roadmap & Q&A:**
    - [**GitHub Discussions**](https://github.com/orphik/spec-bridge-community/discussions) — propose enhancements, upvote roadmap items, and share IDE agent workflows.
