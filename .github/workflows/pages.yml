@@ -28,7 +28,7 @@ jobs:
       - name: Copy brand assets into site bundle
         run: |
           mkdir -p site/assets
-          cp -r assets/* site/assets/ 2>/dev/null || true
+          cp -f assets/*.png assets/*.jpg site/assets/ 2>/dev/null || true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
