@@ -45,6 +45,19 @@
     syncToggleLabel();
   }
 
+  // 1b. Click-to-play facade for 90s Walkthrough video (zero duplicate thumbnail text + instant LCP)
+  var posterBtn = document.getElementById('play-walkthrough-btn');
+  var videoFrame = document.getElementById('hero-video-frame');
+  if (posterBtn && videoFrame) {
+    posterBtn.addEventListener('click', function () {
+      videoFrame.innerHTML =
+        '<iframe src="https://www.youtube-nocookie.com/embed/oSoXlrKdjEU?autoplay=1&rel=0" ' +
+        'title="Spec Bridge for Jira Cloud 90-second founder walkthrough" ' +
+        'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
+        'allowfullscreen></iframe>';
+    });
+  }
+
   // 2. Interactive Zero-Login Spec Bridge Sandbox
   var SCENARIOS = {
     prd: {
@@ -256,7 +269,7 @@
     }
     if (fmt === 'speckit') {
       return (
-        '# GitHub Spec Kit — ' + story.key + ': ' + story.title + '\n' +
+        '# GitHub Spec Kit: ' + story.key + ' - ' + story.title + '\n' +
         'Spec-Hash: ' + story.hash + ' | Runs-on-Atlassian: true\n\n' +
         '## Inherited Guardrails\n- ' + story.guardrails + '\n\n' +
         '## Testable Requirement (EARS)\n- ' + story.ears + '\n\n' +
@@ -264,7 +277,7 @@
       );
     }
     return (
-      '# [OPEN-SPEC / MCP] ' + story.key + ' — ' + story.title + '\n' +
+      '# [OPEN-SPEC / MCP] ' + story.key + ' - ' + story.title + '\n' +
       'Pull live in Cursor / Claude Code / Rovo: get_locked_spec(issueKey: "' + story.key + '")\n\n' +
       '- EARS: ' + story.ears + '\n' +
       '- AC: ' + story.gherkin + '\n' +
@@ -323,22 +336,34 @@
       score +
       '/100</span> <span style="font-size:0.8rem;color:var(--muted)">(Raw draft: ' +
       sc.rawScore +
-      '/100)</span></div>';
+      '/100)</span>' +
+      (!allResolved
+        ? ' <span class="jp-hint">&middot; Step 1: Resolve Card 2 or click Accept All Recommended</span>'
+        : !state.compiled
+        ? ' <span class="jp-hint">&middot; Step 2: Click Compile Child Items</span>'
+        : '') +
+      '</div>';
     html += '  <div style="display:flex;gap:8px;flex-wrap:wrap">';
     if (!allResolved) {
       html +=
-        '<button type="button" class="btn sm" id="act-accept-all">Accept All Recommended</button>';
+        '<button type="button" class="btn sm primary" id="act-accept-all">1. Accept All Recommended</button>';
     }
     html +=
-      '<button type="button" class="btn sm primary" id="act-compile" ' +
-      (!allResolved ? 'disabled' : '') +
-      '>' +
-      (state.compiled ? 'Re-Compile Locked Items' : 'Compile Child Items (' + (sc.cards.length - resolvedCount) + ' open)') +
+      '<button type="button" class="btn sm' +
+      (allResolved && !state.compiled ? ' primary' : '') +
+      '" id="act-compile" aria-disabled="' +
+      String(!allResolved) +
+      '">' +
+      (state.compiled
+        ? 'Re-Compile Locked Items'
+        : '2. Compile Child Items (' + (sc.cards.length - resolvedCount) + ' open)') +
       '</button>';
     if (state.compiled) {
       html +=
-        '<button type="button" class="btn sm" id="act-drift">' +
-        (state.drifted ? 'Re-Lock v2 Spec' : 'Simulate Tuesday PRD Edit (Drift)') +
+        '<button type="button" class="btn sm' +
+        (!state.drifted ? ' primary' : '') +
+        '" id="act-drift">' +
+        (state.drifted ? 'Re-Lock v2 Spec' : '3. Simulate Tuesday PRD Edit (Drift)') +
         '</button>';
     }
     html += '  </div>';
@@ -362,7 +387,7 @@
     if (state.compiled) {
       html += '<div style="margin-bottom:14px">';
       html +=
-        '<div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">Compiled Jira Items — Ready for Sprint &amp; MCP Pull</div>';
+        '<div style="font-weight:700;font-size:0.9rem;margin-bottom:8px">Compiled Jira Items &middot; Ready for Sprint &amp; MCP Pull</div>';
       sc.stories.forEach(function (st, idx) {
         html += '<div class="jp-story-row">';
         html += '  <div>';
@@ -497,7 +522,7 @@
 
     // Parking Lot
     html += '<div class="jp-context" style="margin-top:10px;margin-bottom:0">';
-    html += '<strong>Parking Lot — Quarantined Non-Goals (' + sc.parkingLot.length + ')</strong>';
+    html += '<strong>Parking Lot &middot; Quarantined Non-Goals (' + sc.parkingLot.length + ')</strong>';
     html += '<ul style="margin:6px 0 0;padding-left:18px;color:var(--muted)">';
     sc.parkingLot.forEach(function (item) {
       html += '<li>' + item + '</li>';
@@ -536,7 +561,7 @@
 
   root.addEventListener('click', function (ev) {
     var t = ev.target.closest('button');
-    if (!t) return;
+    if (!t || t.getAttribute('aria-disabled') === 'true') return;
 
     if (t.hasAttribute('data-lens')) {
       state.lens = t.getAttribute('data-lens');

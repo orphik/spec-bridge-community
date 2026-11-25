@@ -31,10 +31,11 @@
         </a>
 
         <nav aria-label="Primary" class="nav-links">
-          <a href="#walkthrough">90s Walkthrough</a>
+          <a href="#walkthrough">Walkthrough</a>
           <a href="#sandbox">Interactive Sandbox</a>
           <a href="#capabilities">Capabilities</a>
-          <a href="https://github.com/orphik/spec-bridge-community">Starter Kit &amp; Roadmap</a>
+          <a href="#pricing">Pricing</a>
+          <a href="https://github.com/orphik/spec-bridge-community">Starter Kit</a>
           <button type="button" class="btn sm" id="theme-toggle">Dark Theme</button>
           <a
             href="https://marketplace.atlassian.com/apps/562168567"
@@ -48,66 +49,87 @@
 
     <main>
       <section class="hero wrap" id="walkthrough">
-        <div class="trust-pill">
-          100% RUNS ON ATLASSIAN &bull; ZERO EXTERNAL DATA EGRESS &bull; ZERO REPO OAUTH
-        </div>
-        <h1 id="hero-title" tabindex="-1">
-          Turn Confluence PRDs and Jira Epics into locked, AI-ready specs.
-        </h1>
-        <p class="hero-lead">
-          Unstated edge cases and Phase 2 wishlists slip past refinement every week, and AI coding
-          agents build those gaps literally. Spec Bridge catches missing product and engineering
-          decisions directly inside Jira Cloud before coding starts.
-        </p>
+        <div class="hero-grid">
+          <div>
+            <div class="trust-pill">
+              100% RUNS ON ATLASSIAN &bull; ZERO DATA EGRESS &bull; ZERO REPO OAUTH
+            </div>
+            <h1 id="hero-title" tabindex="-1">
+              Turn Confluence PRDs and Jira Epics into locked, AI-ready specs.
+            </h1>
+            <p class="hero-lead">
+              Unstated edge cases and Phase 2 wishlists slip past refinement every week, and AI
+              coding agents build those gaps literally. Spec Bridge catches missing product and
+              engineering decisions directly inside Jira Cloud before coding starts.
+            </p>
 
-        <div class="cta-row">
-          <a
-            href="https://marketplace.atlassian.com/apps/562168567"
-            class="btn primary"
-          >
-            Start Free 30-Day Trial on Atlassian Marketplace
-          </a>
-          <a href="#sandbox" class="btn">Try Interactive Jira Sandbox</a>
-          <a href="https://github.com/orphik/spec-bridge-community" class="btn">
-            Open-Source IDE Agent Rules
-          </a>
-        </div>
-
-        <div class="video-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/oSoXlrKdjEU?rel=0"
-              title="Spec Bridge for Jira Cloud 90-second founder walkthrough"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            <div class="cta-row">
+              <a
+                href="https://marketplace.atlassian.com/apps/562168567"
+                class="btn primary"
+              >
+                Start Free 30-Day Trial
+              </a>
+              <a href="#sandbox" class="btn">Try Interactive Sandbox</a>
+              <a href="https://github.com/orphik/spec-bridge-community" class="btn">
+                IDE Agent Rules
+              </a>
+            </div>
           </div>
-          <details class="transcript-box">
-            <summary>Read full 90-second walkthrough transcript</summary>
-            <p>
-              Even when a team writes a solid Confluence PRD, unstated edge cases and Phase 2
-              wishlists still slip into sprint planning, and coding agents build those gaps
-              literally. With Spec Bridge inside Jira Cloud, link your PRD to an Epic to score
-              readiness, resolve unstated product and engineering trade-offs up front, and
-              quarantine Phase 2 scope into an explicit Non-Goals Parking Lot.
-            </p>
-            <p>
-              In one click, Spec Bridge breaks that PRD down across your Jira hierarchy (from
-              Portfolio Epics, Capabilities, and Features down to User Stories), carrying parent
-              architectural and SOC 2 guardrails down every level. No Confluence page? Start with a
-              quick two-sentence description on any Jira Epic. Spec Bridge scans for missing
-              decisions, with dedicated views for Product Managers and Engineers, and compiles
-              vertically sliced stories in seconds.
-            </p>
-            <p>
-              Each story gets testable EARS requirements, Gherkin scenarios, and your custom
-              Acceptance Criteria field populated automatically, plus one-click Spec Kit, OpenSpec,
-              and MCP exports. When an upstream PRD changes mid-sprint, Spec Bridge flags drifted
-              stories with an inline red-green Spec Diff. Everything runs 100% on Atlassian with
-              zero data egress. Try it free on the Atlassian Marketplace.
-            </p>
-          </details>
+
+          <div class="video-card">
+            <div class="video-window-bar">
+              <span class="window-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </span>
+              <span>Live Jira Cloud &amp; Confluence Walkthrough (1:34)</span>
+            </div>
+            <div class="video-frame" id="hero-video-frame">
+              <button
+                type="button"
+                class="video-poster-btn"
+                id="play-walkthrough-btn"
+              >
+                <img
+                  src="./assets/video-poster.jpg"
+                  alt=""
+                  fetchpriority="high"
+                  width="1280"
+                  height="634"
+                />
+                <span class="video-play-pill">
+                  <span class="video-play-icon" aria-hidden="true">&#9654;</span>
+                  <span>Watch 90s Walkthrough (1:34)</span>
+                  <span class="visually-hidden"> for Spec Bridge in Jira Cloud</span>
+                </span>
+              </button>
+            </div>
+            <details class="transcript-box">
+              <summary>Read full walkthrough transcript</summary>
+              <p>
+                Even when a team writes a solid Confluence PRD, unstated edge cases and Phase 2
+                wishlists still slip into sprint planning, and coding agents build those gaps
+                literally. With Spec Bridge inside Jira Cloud, link your PRD to an Epic to score
+                readiness, resolve unstated product and engineering trade-offs up front, and
+                quarantine Phase 2 scope into an explicit Non-Goals Parking Lot.
+              </p>
+              <p>
+                In one click, Spec Bridge breaks that PRD down across your Jira hierarchy (from
+                Portfolio Epics, Capabilities, and Features down to User Stories), carrying parent
+                architectural and SOC 2 guardrails down every level. No Confluence page? Start with
+                a quick two-sentence description on any Jira Epic. Spec Bridge scans for missing
+                decisions, with dedicated views for Product Managers and Engineers, and compiles
+                vertically sliced stories in seconds.
+              </p>
+              <p>
+                Each story gets testable EARS requirements, Gherkin scenarios, and your custom
+                Acceptance Criteria field populated automatically, plus one-click Spec Kit,
+                OpenSpec, and MCP exports. When an upstream PRD changes mid-sprint, Spec Bridge
+                flags drifted stories with an inline red-green Spec Diff. Everything runs 100% on
+                Atlassian with zero data egress. Try it free on the Atlassian Marketplace.
+              </p>
+            </details>
+          </div>
         </div>
       </section>
 
@@ -116,9 +138,10 @@
           <div>
             <h2>Try Spec Bridge Live in Your Browser (Zero Login)</h2>
             <p>
-              Toggle between <strong>PM View</strong> and <strong>Engineer View</strong>, resolve
-              the open card, click <strong>Compile Child Items</strong>, and simulate a mid-sprint
-              Confluence PRD edit to inspect the inline red-green Spec Diff.
+              Step through a real pre-flight session: click <strong>1. Accept All Recommended</strong>
+              (or pick your own option on Card 2), click <strong>2. Compile Child Items</strong>,
+              then click <strong>3. Simulate Tuesday PRD Edit</strong> to see the inline red-green
+              Spec Diff.
             </p>
           </div>
         </div>
@@ -149,15 +172,31 @@
         <h2>Built for Every Role in the Sprint</h2>
         <div class="grid-3">
           <article class="feature-card">
+            <div class="feature-top">
+              <span class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 3v12" /><circle cx="18" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 9a9 9 0 0 1-9 9" />
+                </svg>
+              </span>
+              <span class="feature-tag">Enterprise Agile</span>
+            </div>
             <h3>Multi-Level Jira Decomposition</h3>
             <p>
-              Breaks Confluence PRDs down across custom enterprise hierarchies (Portfolio Epic,
-              Capability, Feature, Story, Sub-task) while carrying parent architectural and SOC 2
-              guardrails down every level.
+              Breaks Confluence PRDs down across custom hierarchies (Portfolio Epic, Capability,
+              Feature, Story, Sub-task) while carrying parent architectural and SOC 2 guardrails
+              down every level.
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card accent-green">
+            <div class="feature-top">
+              <span class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                </svg>
+              </span>
+              <span class="feature-tag">Everyday Backlogs</span>
+            </div>
             <h3>Two-Sentence Epics to Ready Stories</h3>
             <p>
               No Confluence doc needed. Start from a short Epic or Story description, resolve open
@@ -167,6 +206,14 @@
           </article>
 
           <article class="feature-card">
+            <div class="feature-top">
+              <span class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="16" rx="2" /><line x1="12" y1="4" x2="12" y2="20" />
+                </svg>
+              </span>
+              <span class="feature-tag">PM + Engineering</span>
+            </div>
             <h3>Bilingual PM &amp; Engineer Views</h3>
             <p>
               Product Managers review plain-language customer and scope trade-offs while Tech Leads
@@ -174,7 +221,15 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card accent-warn">
+            <div class="feature-top">
+              <span class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 9v4" /><path d="M12 17h.01" /><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                </svg>
+              </span>
+              <span class="feature-tag">Sprint Protection</span>
+            </div>
             <h3>Mid-Sprint Drift Gatekeeper &amp; Diff</h3>
             <p>
               Detects when a linked Confluence PRD changes after lock, blocks moving drifted
@@ -184,6 +239,14 @@
           </article>
 
           <article class="feature-card">
+            <div class="feature-top">
+              <span class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" />
+                </svg>
+              </span>
+              <span class="feature-tag">Coding Agents</span>
+            </div>
             <h3>Spec Kit, OpenSpec &amp; Rovo MCP</h3>
             <p>
               One-click zero-token projections for GitHub Spec Kit, OpenSpec, Markdown, and JSON,
@@ -192,7 +255,15 @@
             </p>
           </article>
 
-          <article class="feature-card">
+          <article class="feature-card accent-green">
+            <div class="feature-top">
+              <span class="feature-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </span>
+              <span class="feature-tag">Zero Data Egress</span>
+            </div>
             <h3>100% Runs on Atlassian</h3>
             <p>
               Powered exclusively by Atlassian Forge SQL and Forge AI inside your tenant boundary.
@@ -200,6 +271,31 @@
               monthly credit cap.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section class="section wrap" id="pricing">
+        <div class="pricing-strip">
+          <div>
+            <h2 style="margin-bottom:6px;font-size:1.35rem">Simple Paid-via-Atlassian Pricing</h2>
+            <p style="margin:0;color:var(--muted);font-size:0.92rem">
+              Billed directly through your existing Atlassian Cloud account with zero external
+              vendor procurement or separate API keys.
+            </p>
+          </div>
+          <div class="price-stat">
+            <div class="price-big">30 Days Free</div>
+            <div class="price-sub">Full Live AI + Sandbox trial</div>
+          </div>
+          <div class="price-stat">
+            <div class="price-big">$10 / mo flat</div>
+            <div class="price-sub">Up to 10 Jira users ($1.35 to $4.85/user at scale)</div>
+          </div>
+          <div>
+            <a href="https://marketplace.atlassian.com/apps/562168567" class="btn primary">
+              Try Free on Marketplace
+            </a>
+          </div>
         </div>
       </section>
     </main>
