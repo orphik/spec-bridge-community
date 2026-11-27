@@ -32,10 +32,10 @@
 
         <nav aria-label="Primary" class="nav-links">
           <a href="#walkthrough">Walkthrough</a>
-          <a href="#sandbox">Interactive Sandbox</a>
-          <a href="#capabilities">Capabilities</a>
+          <a href="#sandbox">Sandbox</a>
+          <a href="#why-different">Why Spec Bridge</a>
+          <a href="#community">Community</a>
           <a href="#pricing">Pricing</a>
-          <a href="https://github.com/orphik/spec-bridge-community">Starter Kit</a>
           <button type="button" class="btn sm" id="theme-toggle">Dark Theme</button>
           <a
             href="https://marketplace.atlassian.com/apps/562168567"
@@ -271,6 +271,133 @@
               monthly credit cap.
             </p>
           </article>
+        </div>
+      </section>
+
+      <section class="section wrap" id="why-different">
+        <div class="section-head">
+          <div>
+            <h2>Why Spec Bridge Is 1-of-1 on the Atlassian Marketplace</h2>
+            <p>
+              Other AI tools write longer Jira tickets. Spec Bridge catches the missing product and
+              engineering decisions before coding starts, and physically blocks drifted stories when
+              an upstream PRD changes.
+            </p>
+          </div>
+        </div>
+
+        <div
+          tabindex="0"
+          role="region"
+          aria-labelledby="compare-table-caption"
+          class="table-wrapper"
+        >
+          <table class="compare-table">
+            <caption id="compare-table-caption" class="visually-hidden">
+              Comparison of Spec Bridge against Rovo Studio and Marketplace AI story writers
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Capability</th>
+                <th scope="col">Rovo &amp; Rovo Studio</th>
+                <th scope="col">AI Story Writer Apps</th>
+                <th scope="col" class="col-highlight">Spec Bridge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Core Role</th>
+                <td>Chat Q&amp;A and one-shot text generation</td>
+                <td>Prompt-to-story text and checklist writer</td>
+                <td class="col-highlight">
+                  <strong>Pre-flight decision gatekeeper &amp; spec compiler</strong>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Refinement UX</th>
+                <td>Solo chat sidebar</td>
+                <td>Single prompt form</td>
+                <td class="col-highlight">
+                  <strong>Shared PM View + Engineer View cards &amp; Non-Goals Parking Lot</strong>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Mid-Sprint PRD Drift</th>
+                <td>Stateless (forgets which PRD version built the ticket)</td>
+                <td>Manual re-prompting or static checklist</td>
+                <td class="col-highlight">
+                  <strong>SHA-256 version tracking, red-green v1-&gt;v2 diff &amp; Kanban transition blocker</strong>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Enterprise Hierarchies</th>
+                <td>Context dilutes across deep trees (40-50 item caps)</td>
+                <td>Single Epic -&gt; Story level</td>
+                <td class="col-highlight">
+                  <strong>Deterministic 5-level guardrail inheritance (Portfolio Epic -&gt; Sub-task)</strong>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Security &amp; Coding Agents</th>
+                <td>Runs on Atlassian (writes code via Rovo Dev)</td>
+                <td>Often sends tickets to external vendor servers</td>
+                <td class="col-highlight">
+                  <strong>100% Runs on Atlassian + live MCP, Spec Kit &amp; OpenSpec contracts for Rovo Dev, Cursor &amp; Claude Code</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section wrap" id="community">
+        <div class="community-card">
+          <div class="community-copy">
+            <div class="trust-pill" style="margin-bottom:12px">
+              COMMUNITY-SHAPED ROADMAP &bull; AUTOMATED ZERO-EGRESS CI/CD
+            </div>
+            <h2>Shaped by Practitioners. Shipped in Days, Not Quarters.</h2>
+            <p>
+              Every team configures Jira differently. Spec Bridge is built directly around feedback
+              from Jira Admins, Product Managers, TPMs, and Engineers, backed by automated security
+              and regression CI/CD gates so practical workflow improvements ship in days instead of
+              sitting in a backlog for six months.
+            </p>
+            <ul class="community-list">
+              <li>
+                <strong>Direct builder access:</strong> Use the in-app zero-PII feedback drawer inside
+                Jira, open a public thread on GitHub, or reach our 24h SLA support desk.
+              </li>
+              <li>
+                <strong>Bring your weirdest edge cases:</strong> Custom 5-level hierarchies, custom
+                Acceptance Criteria screen schemes, or Rovo Studio / Cursor MCP setups.
+              </li>
+              <li>
+                <strong>Open-source starter rules:</strong> Grab ready-to-drop repository rules for
+                Claude Code, Cursor, Copilot, and Antigravity at zero cost.
+              </li>
+            </ul>
+            <div class="cta-row" style="margin-top:20px">
+              <a
+                href="https://github.com/orphik/spec-bridge-community/discussions"
+                class="btn primary"
+              >
+                Join GitHub Discussions &amp; Roadmap
+              </a>
+              <a
+                href="https://github.com/orphik/spec-bridge-community/issues/new/choose"
+                class="btn"
+              >
+                Request a Feature
+              </a>
+              <a
+                href="https://github.com/orphik/spec-bridge-community/tree/main/starter-kit"
+                class="btn"
+              >
+                IDE Agent Starter Kit
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
